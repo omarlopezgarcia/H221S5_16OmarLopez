@@ -1,0 +1,39 @@
+<div>
+  <h2>Add New IP</h2>
+  <form (ngSubmit)="addIPInfo()">
+    <input type="text" [(ngModel)]="newIp" name="newIp" required placeholder="Ingresa una IP" />
+    <button type="submit">Añadir IP</button>
+  </form>
+</div>
+
+<div *ngIf="allIpInfo.length">
+    <h2>Información de las IP's</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>IP</th>
+        <th>City</th>
+        <th>Region</th>
+        <th>Country</th>
+        <th>Location</th>
+        <th>Organization</th>
+        <th>Postal Code</th>
+        <th>Timezone</th>
+      </tr>
+      <tr *ngFor="let ipify of allIpInfo">
+        <td>{{ ipify.id }}</td>
+        <td>{{ ipify.ip }}</td>
+        <td>{{ ipify.city }}</td>
+        <td>{{ ipify.region }}</td>
+        <td>{{ ipify.country }}</td>
+        <td>{{ ipify.loc }}</td>
+        <td>{{ ipify.org }}</td>
+        <td>{{ ipify.postal }}</td>
+        <td>{{ ipify.timezone }}</td>
+        <td>
+          <button (click)="deleteIPInfo(ipify.id)">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
