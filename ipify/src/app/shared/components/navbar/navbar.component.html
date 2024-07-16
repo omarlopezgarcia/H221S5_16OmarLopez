@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .navigationWrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #222;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+      color: white;
+      text-transform: uppercase;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .navigationWrapper .navigation {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navigationWrapper .navigation li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .navigationWrapper button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .navigationWrapper button:focus {
+      outline: none;
+    }
+</style>
+</head>
+<body>
+    <nav class="navigationWrapper">
+        <ul class="navigation">
+            <li><button id="all-ip-info" class="parent"><a class="link" routerLink="all-ip-info"><i class="fas fa-person"></i><span class="align-middle">All IP's</span></a></button></li>
+            <!-- Añade más elementos <li> y <button> según sea necesario -->
+        </ul>
+    </nav>
+</body>
+</html>

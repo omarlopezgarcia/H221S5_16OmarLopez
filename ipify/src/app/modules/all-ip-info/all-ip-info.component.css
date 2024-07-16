@@ -1,0 +1,107 @@
+h1 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.75rem;
+    color: white;
+    margin: 0.5rem 0rem;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(to right, #444, #ccc, #444);
+    height: 0.0625rem;
+    width: 100%;
+    border: 0;
+    margin: 0rem 0.3125rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    padding: 20px;
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+/* ------ STYLES FOR INPUT CONTAINER ----- */
+
+.input-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    margin: 0.5rem 0rem;
+}
+
+.input-container label {
+    position: absolute;
+    top: -100px;
+}
+
+.input-container form {
+    color: white;
+    background-color: #666;
+
+    height: 2rem;
+    width: 80%;
+    padding-left: 0.5rem;
+}
+
+.input-container form::placeholder {
+    color: #ccc;
+}
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    background-color: #555;
+
+    height: 2rem;
+    border: 0.0625rem solid #777;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    background-color: #555;
+}
+
+pre {
+    margin: 0.5rem 0rem;
+}
+
+.item-container .delete-button {
+    color: crimson;
+    margin: 0rem 0.33rem 0rem 0.5rem;
+}
+
+.item-container h2 {
+    color: white;
+    margin: 0rem 0.33rem 0rem 0.5rem;
+    padding: 20px;
+}
+
+.item-container th {
+    color: rgb(199, 199, 199);
+}
+
+.item-container td {
+    color: rgb(231, 231, 231);
+}
